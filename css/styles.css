@@ -1,0 +1,388 @@
+/* ================================= 
+  Page Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+}
+
+.wrap {
+  width: 90%;
+  margin: auto;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+#portfolio {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#contact {
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+#skills {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
+
+figcaption {
+  font-size: .9em;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.main-nav {
+  margin-top: 5px;
+  color: #000;
+}
+
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  color: #000;
+}
+
+.main-nav a {
+  font-size: .95em;
+  text-transform: uppercase;
+  background: #fff;
+  margin: 10px 15px;
+  font-weight: bold;
+}
+
+  .main-nav a:hover {
+    color: #7f0000;
+  }
+
+/* ---- Banner ---- */
+
+.profile-img {
+  width: 50%;
+  height: 50%;
+  border-radius: 20%;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.profile-img:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.banner p,
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.banner p {
+  color: #858585;
+  text-align: center;
+  padding: 1em;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background: #f7f7f7;
+  width: 100%;
+}
+
+.main-header,
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  background: #f7f7f7;
+  padding: 3.2em 0;
+}
+
+.main-footer {
+  background: #f7f7f7;
+  padding: 2em 0;
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+.list {
+  display: none;
+}
+
+.contact-info {
+  background: #f7f7f7;
+  padding: 2em;
+  margin: auto;
+  color: #858585;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+  width: 90%;
+}
+
+.main-skills {
+  padding: 2em;
+  margin: auto;
+  color: #858585;
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.back-to-top {
+  float: right;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .85em;
+  padding-right: 10px;
+}
+
+.footer-name {
+  float: left;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.number {
+  text-align:center;
+}
+
+.number span {
+  font-weight: bold;
+}
+
+.example {
+  text-align: center;
+  color: #858585;
+}
+
+.example h4 {
+  color: #000;
+}
+
+.caption {
+  margin-bottom: 20px;
+  font-size: .95em;
+}
+
+.bottom {
+  background: #f7f7f7;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  
+  .profile-img {
+    float: right;
+    padding-right: 1em;
+  }
+
+  .main-nav {
+    margin-top: 2em;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-header {
+    justify-content: flex-end;
+  }
+
+  .main-nav a {
+    background: #f7f7f7
+  }
+
+  .main-nav a {
+    border-right: 1px solid #e5e5e5;
+    padding-right: 3em;
+    text-align: center;
+  }
+
+  .banner p {
+    padding-top: 6em;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+  
+  .main-footer,
+  .list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .list a {
+    text-transform: uppercase;
+    font-size: .95em;
+  }
+
+  .footer-name { 
+    margin-right: auto;
+  }
+
+  .list a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 2em;
+  }
+  
+  .example {
+    float: left;
+    width: 50%;
+    padding-left: 1em;
+    margin: 0 auto;
+  }
+
+  .example:nth-child(3n+1) {
+    clear: left;
+  }
+
+  .example:nth-child(6n+1) {
+    clear: right;
+  }
+
+  .example:nth-child(7n+1) {
+    clear: left;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  .main-header {
+    flex-direction: row;
+  }
+  
+  .name {
+    margin-right: auto;
+  }
+  
+  .main-nav {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .main-nav li {
+    margin-left: .65em;
+    margin-right: .65em;
+  }
+
+  .example {
+    float: left;
+    width: 32%;
+    margin: 0 auto;
+    padding-left: 2em;
+  }
+
+  .example:nth-child(3n+1) {
+    clear: right;
+  }
+
+  .example:nth-child(4n+1) {
+    clear: left;
+  }
+
+  .example:nth-child(7n+1) {
+    clear: left;
+  }
+
+  .example:nth-child(8n+1) {
+    clear: right;
+  }
+
+  .example:nth-child(12n+1) {
+    clear: right;
+  }
+
+  .contact-info p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .main-skills {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .number {
+    padding-top: 1em;  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
